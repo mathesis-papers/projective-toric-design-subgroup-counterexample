@@ -1,9 +1,32 @@
-# Mathesis paper template
+# Identity-containing counterexamples to Conjecture 4.9 (Iosue–Mooney–Ehrenberg–Gorshkov, Section 4.3, p. 15, arXiv:2311.13479v3): certificates and extensions of Abdukhalikov's (2014) construction
 
-One repository for one exact Mathesis paper version. This template has no selected paper and no example books.
+**Authors:** Haobo Ma, Wenlin Zhang
 
-Authors can start from the [Mathesis LaTeX manuscript template](docs/layer-mathesis/MANUSCRIPT.md) for papers and short notes. Our own short notes use it as their default reference; sections and length follow the mathematical argument.
+Extending Abdukhalikov's (2014) nonadditive-spread construction in Kantor's (2012) matrix formulation, we give explicit certificates refuting Conjecture 4.9 of Iosue, Mooney, Ehrenberg and Gorshkov, Projective toric designs, quantum state designs, and mutually unbiased bases (2024), Section 4.3, p. 15, arXiv:2311.13479v3, even with an identity-containing hypothesis. Our 729 quadratic phase functions in dimension 27 form a projective toric two-design with the required overlaps but without additive closure; no translate is a subgroup. Written proofs and exact finite certificates specify each conclusion's scope.
 
-The upstream books template supplies the machinery; the Mathesis layer supplies the publisher adapter and the [enforced four-zone layout](docs/layer-mathesis/LAYOUT.md).
+- PDF: [frozen public file](paper.pdf)
+- License: CC-BY-4.0
+- Version: 3
+- Mathesis record: [projective-toric-design-subgroup-counterexample](https://mathesis-omega-research.apps.chrono-ai.fun/papers/projective-toric-design-subgroup-counterexample?version=3)
 
-Use [the publisher pipeline](docs/layer-mathesis/PIPELINE.md) to import a public projection with `paper.py fill`. It creates the paper record, one bilingual content skeleton and a generated paper README. Upgrade with `tbook template update`; keep preparation run records outside the repository.
+## How to cite
+
+Haobo Ma, Wenlin Zhang (2026). Identity-containing counterexamples to Conjecture 4.9 (Iosue–Mooney–Ehrenberg–Gorshkov, Section 4.3, p. 15, arXiv:2311.13479v3): certificates and extensions of Abdukhalikov's (2014) construction. Mathesis, version 3. https://mathesis-omega-research.apps.chrono-ai.fun/papers/projective-toric-design-subgroup-counterexample?version=3
+
+## Statement progress
+
+| Statement | Formalization status | Source | Verification basis |
+|---|---|---|---|
+| Lemma (s1) | preparing | [Lean source](https://github.com/the-omega-institute/trureturing/blob/f7ba557ae2a5d2c3a3a519e0713d65ac86af2973/D5/S3/Quantum/Measurements/ProjectiveToricDesignNonGroup.lean) | No public receipt |
+| Corollary (s2) | preparing | [Lean source](https://github.com/the-omega-institute/trureturing/blob/f7ba557ae2a5d2c3a3a519e0713d65ac86af2973/D5/S3/Quantum/Measurements/ProjectiveToricDesignNonGroup.lean) | No public receipt |
+| Theorem (s3) | preparing | [Lean source](https://github.com/the-omega-institute/trureturing/blob/f7ba557ae2a5d2c3a3a519e0713d65ac86af2973/D5/S3/Quantum/Measurements/ProjectiveToricDesignNonGroup.lean) | No public receipt |
+| Corollary (s4) | preparing | [Lean source](https://github.com/the-omega-institute/trureturing/blob/f7ba557ae2a5d2c3a3a519e0713d65ac86af2973/D5/S3/Quantum/Measurements/ProjectiveToricDesignNonGroup.lean) | No public receipt |
+| Corollary (s5) | preparing | [Lean source](https://github.com/the-omega-institute/trureturing/blob/f7ba557ae2a5d2c3a3a519e0713d65ac86af2973/D5/S3/Quantum/Measurements/ProjectiveToricDesignNonGroup.lean) | No public receipt |
+| Corollary (s6) | preparing | [Lean source](https://github.com/the-omega-institute/trureturing/blob/f7ba557ae2a5d2c3a3a519e0713d65ac86af2973/D5/S3/Quantum/Measurements/ProjectiveToricDesignNonGroup.lean) | No public receipt |
+| Corollary (s7) | preparing | [Lean source](https://github.com/the-omega-institute/trureturing/blob/f7ba557ae2a5d2c3a3a519e0713d65ac86af2973/D5/S3/Quantum/Measurements/ProjectiveToricDesignNonGroup.lean) | No public receipt |
+| Corollary (s8) | preparing | [Lean source](https://github.com/the-omega-institute/trureturing/blob/f7ba557ae2a5d2c3a3a519e0713d65ac86af2973/D5/S3/Quantum/Measurements/ProjectiveToricDesignNonGroup.lean) | No public receipt |
+| Corollary (s9) | preparing | [Lean source](https://github.com/the-omega-institute/trureturing/blob/f7ba557ae2a5d2c3a3a519e0713d65ac86af2973/D5/S3/Quantum/Measurements/ProjectiveToricDesignNonGroup.lean) | No public receipt |
+
+## Contributions
+
+Original authors are listed above. Formalization contributors and attribution are retained in `formalization/nodes.json`; repository pull requests do not confer verification or credit. Submit formalization attempts through the Mathesis attempt path described in [CONTRIBUTING.md](CONTRIBUTING.md).

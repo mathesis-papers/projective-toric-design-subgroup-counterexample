@@ -1,0 +1,23 @@
+{
+  "id": "projective-toric-design-subgroup-counterexample",
+  "revision": 3,
+  "problem_ids": [
+    "iosue-mooney-ehrenberg-gorshkov-2024-projective-toric-design-subgroup-conjecture"
+  ],
+  "topic": "Conjecture 4.9, Section 4.3 of Iosue, Mooney, Ehrenberg and Gorshkov, arXiv:2311.13479v3",
+  "title": "Identity-containing counterexamples to Conjecture 4.9 (Iosue–Mooney–Ehrenberg–Gorshkov, Section 4.3, p. 15, arXiv:2311.13479v3): certificates and extensions of Abdukhalikov's (2014) construction",
+  "creators": [
+    {
+      "name": "Haobo Ma",
+      "affiliation": "ChronoAI Pte Ltd, Singapore"
+    },
+    {
+      "name": "Wenlin Zhang",
+      "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore"
+    }
+  ],
+  "abstract": "Extending Abdukhalikov's (2014) nonadditive-spread construction in Kantor's (2012) matrix formulation, we give explicit certificates refuting Conjecture 4.9 of Iosue, Mooney, Ehrenberg and Gorshkov, Projective toric designs, quantum state designs, and mutually unbiased bases (2024), Section 4.3, p. 15, arXiv:2311.13479v3, even with an identity-containing hypothesis. Our 729 quadratic phase functions in dimension 27 form a projective toric two-design with the required overlaps but without additive closure; no translate is a subgroup. Written proofs and exact finite certificates specify each conclusion's scope.",
+  "summary": "Classical nonadditive spreads and a separate 27-matrix certificate refute the identity-containing subgroup assertion in Conjecture 4.9. For Conjecture 4.7, the forward implication of Conjecture 4.8, the dimension-six non-group nonexistence conjecture and the minimal-design group question: literal statement only; translation-invariant version not covered. Dimension-six MUB existence is not settled.",
+  "license": "cc-by-4.0",
+  "evidence_url": "https://github.com/the-omega-institute/trureturing/blob/f7ba557ae2a5d2c3a3a519e0713d65ac86af2973/D5/S3/Quantum/Measurements/ProjectiveToricDesignNonGroup.lean"
+}

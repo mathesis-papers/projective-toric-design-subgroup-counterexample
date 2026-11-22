@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this work, cite it."
+title: "Identity-containing counterexamples to Conjecture 4.9 (Iosue–Mooney–Ehrenberg–Gorshkov, Section 4.3, p. 15, arXiv:2311.13479v3): certificates and extensions of Abdukhalikov's (2014) construction"
+authors:
+  - name: "Haobo Ma"
+  - name: "Wenlin Zhang"
+date-released: "2026-11-22"
+version: "3"
+url: "https://mathesis-omega-research.apps.chrono-ai.fun/papers/projective-toric-design-subgroup-counterexample?version=3"
+license: "CC-BY-4.0"

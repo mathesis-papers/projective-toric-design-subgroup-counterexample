@@ -1,0 +1,46 @@
+{
+  "arithmetic": "integer arithmetic modulo 3 and exact Eisenstein norms",
+  "coordinate_pair_moment_cases": {
+    "diagonal": 378,
+    "off_diagonal": 142506
+  },
+  "determinant_histogram": {
+    "1": 179,
+    "2": 172
+  },
+  "distinct_anchored_phase_functions": 729,
+  "identity_present": true,
+  "invertible_unordered_differences": 351,
+  "matrix_data_sha256": "e107dd65c36dffc1d38a8b8c70240f8e7513c1ceff12073e9e91e0f9354f7a37",
+  "missing_matrix_sum": [
+    [
+      0,
+      1,
+      1
+    ],
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      2
+    ]
+  ],
+  "moment_method": "For unequal coordinate sums, the 27 linear characters have residues 9,9,9; for equal sums, all 27 quadratic residues are enumerated. Coordinate-pair symmetry covers every ordered quadruple.",
+  "nonclosure_indices": [
+    1,
+    3
+  ],
+  "ordered_coordinate_quadruples_covered": 531441,
+  "ordered_distinct_phase_pairs_covered": 530712,
+  "overlap_exponent_cases": {
+    "0": 26,
+    "27": 9477
+  },
+  "overlap_method": "Every cross-matrix difference is enumerated for all 27 linear terms; all 26 nonzero linear differences are enumerated for equal matrices. Reversing a difference conjugates the sum.",
+  "status": "pass",
+  "symmetric_matrices": 27
+}

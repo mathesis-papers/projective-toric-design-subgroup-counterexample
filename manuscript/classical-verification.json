@@ -1,0 +1,9 @@
+{
+  "distinct_linear_trace_self_adjoint_maps": 27,
+  "field": "F_3[u]/(u^3-u-1)",
+  "invertible_unordered_differences": 351,
+  "nonclosure_witness": "T_{-1} belongs to K and -T_{-1}=T_1 does not belong to K",
+  "scope": "Exact finite verification of the classical spread formulas; phase-design conclusions follow from the written character-sum proof.",
+  "source": "Abdukhalikov, arXiv:1306.3478v3, Section 3.3, Corollary 3.7",
+  "status": "pass"
+}

@@ -1,0 +1,260 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs,array}
+\usepackage[T1]{fontenc}
+\usepackage[colorlinks=true,urlcolor=blue,citecolor=blue,linkcolor=blue]{hyperref}
+\usepackage{url}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\F}{\mathbb F}
+\newcommand{\T}{\mathbb T}
+\newcommand{\Sset}{\mathcal S}
+\newcommand{\leanurl}{https://github.com/the-omega-institute/trureturing/blob/f7ba557ae2a5d2c3a3a519e0713d65ac86af2973/D5/S3/Quantum/Measurements/ProjectiveToricDesignNonGroup.lean}
+\title{Identity-containing counterexamples to Conjecture 4.9\\
+\large Iosue--Mooney--Ehrenberg--Gorshkov, Section~4.3, p.~15, arXiv:2311.13479v3\\
+Certificates and extensions of Abdukhalikov's (2014) construction}
+\author{Haobo Ma\\\small ChronoAI Pte Ltd, Singapore\and Wenlin Zhang\\\small National University of Singapore\\\small ChronoAI Pte Ltd, Singapore}
+\date{November 5, 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+Extending Abdukhalikov's (2014) nonadditive-spread construction in Kantor's (2012) matrix formulation, we give explicit certificates refuting Conjecture 4.9 of Iosue, Mooney, Ehrenberg and Gorshkov, \emph{Projective toric designs, quantum state designs, and mutually unbiased bases} (2024), Section~4.3, p.~15, arXiv:2311.13479v3, even with an identity-containing hypothesis. Our 729 quadratic phase functions in dimension 27 form a projective toric two-design with the required overlaps but without additive closure; no translate is a subgroup. Written proofs and exact finite certificates specify each conclusion's scope.
+\end{abstract}
+\noindent\small\copyright\ 2026 Haobo Ma and Wenlin Zhang. Licensed under
+\href{https://creativecommons.org/licenses/by/4.0/}{CC BY 4.0}.\normalsize
+
+\section{The conjecture and the construction}
+Write $\T=\mathbb R/(2\pi\mathbb Z)$ and $P(\T^d)=\T^d/\T$, where the denominator is the diagonal subgroup. Represent each point by a phase function $\phi$ whose coordinate at a fixed index $0$ is zero. This representative slice is an additive model of the projective torus. A nonempty finite set $X$ is a uniformly weighted projective toric two-design precisely when
+\begin{equation}\label{eq:moment}
+\frac1{|X|}\sum_{\phi\in X}e^{i(\phi(a_1)+\phi(a_2)-\phi(b_1)-\phi(b_2))}
+=\begin{cases}1,&\{\!\{a_1,a_2\}\!\}=\{\!\{b_1,b_2\}\!\},\\0,&\text{otherwise.}\end{cases}
+\end{equation}
+Conjecture 4.9 of \cite[Section 4.3, p.~15]{iosue} states: ``Let $d$ be any dimension and let $X$ be a $P(T^d)$ 2-design of size $|X|=d^2$. If $X$ is not a subgroup of $P(T^d)$, then $X$ does not satisfy Eq.~(25).'' Equivalently, a two-design of size $d^2$ satisfying
+\begin{equation}\label{eq:overlap}
+\left|\sum_x e^{i(\phi(x)-\theta(x))}\right|^2\in\{0,d\}
+\qquad(\phi\ne\theta\in X)
+\end{equation}
+must be a subgroup. Equation \eqref{eq:overlap} is their Eq.~(25), in Section~4.2, Theorem~4.4, p.~13.
+The counterexample below also contains zero, so it is not a subgroup translated away from its identity.
+
+The link between symmetric matrix spreads and complete sets of mutually unbiased bases is classical; see Kantor \cite[Section 3, Eqs.~(3.1)--(3.3)]{kantor} and Abdukhalikov \cite[Section 3]{abdu}. The nonadditive symplectic-spread antecedent is Ball, Bamberg, Lavrauw and Penttila \cite[Section~1 and Theorem~2.2]{ball}, published in May 2004; their order-27 case gives Hering's plane. In particular, the explicit nonadditive spread of \cite[Section~3.3, Corollary~3.7]{abdu}, available in arXiv v3 on October~22, 2014, already supplies an identity-containing counterexample once its phase closure is examined. Corollary~\ref{cor:classical} makes that deduction explicit. We give a separate symmetric-matrix certificate and extend the consequences to neighboring questions; the spread and MUB constructions are the cited classical ones. The moment identity and subgroup criterion admit the following self-contained proof.
+
+\begin{lemma}\label{lem:spread}
+Let $p$ be an odd prime, $V=\F_p^n$, and $d=p^n$. Suppose $\Sset$ consists of $d$ symmetric $n\times n$ matrices over $\F_p$, contains zero, and every difference of distinct matrices is invertible. For $M\in\Sset$ and $b\in V$, set
+\[
+f_{M,b}(x)=x^TMx+b^Tx,\quad
+\phi_{M,b}(x)=\frac{2\pi}{p}f_{M,b}(x)\pmod {2\pi},\quad
+X(\Sset)=\{\phi_{M,b}:M\in\Sset,\ b\in V\}.
+\]
+Then $X(\Sset)$ has $d^2$ points, contains zero, is anchored at $x=0$, satisfies \eqref{eq:moment} and \eqref{eq:overlap}, and is a subgroup if and only if $\Sset$ is closed under matrix addition.
+\end{lemma}
+\begin{proof}
+Put $\chi(t)=e^{2\pi i t/p}$. For $w\in V$, character orthogonality gives
+\begin{equation}\label{eq:orth}
+\sum_{x\in V}\chi(w^Tx)=\begin{cases}d,&w=0,\\0,&w\ne0.\end{cases}
+\end{equation}
+For $w\ne0$, choose $y$ with $\chi(w^Ty)\ne1$ and translate the sum by $y$ to obtain zero; this proves \eqref{eq:orth}.
+
+If $f_{A,b}=f_{B,c}$ as functions, polarization yields
+$2x^T(A-B)y=0$ for every $x,y\in V$. As $p$ is odd, $A=B$, and then $(b-c)^Tx=0$ gives $b=c$. The phase map $\F_p\to\T$ is injective, so all $d^2$ phase functions are distinct. They vanish at zero, and $(M,b)=(0,0)$ supplies the identity.
+
+For a symmetric invertible $A$ and any $b$, expand the squared character sum and write $x=y+h$:
+\begin{align}\label{eq:gauss}
+\left|\sum_x\chi(x^TAx+b^Tx)\right|^2
+&=\sum_h\chi(h^TAh+b^Th)\sum_y\chi(2h^TAy)\\
+&=d.\nonumber
+\end{align}
+Only $h=0$ survives by \eqref{eq:orth}. Distinct parameters with equal matrix give a nonzero linear character sum and hence squared norm zero. Distinct matrices give \eqref{eq:gauss}, with $A=M-N$ and linear term $b-c$. This proves \eqref{eq:overlap}.
+
+For the second moment put $s=a_1+a_2-b_1-b_2$. Summing over the linear parameter gives
+\begin{align}\label{eq:momentfactor}
+&\sum_{M\in\Sset}\sum_{c\in V}
+ \chi\bigl(f_{M,c}(a_1)+f_{M,c}(a_2)-f_{M,c}(b_1)-f_{M,c}(b_2)\bigr)\\
+&\hspace{12mm}=\left(\sum_{M\in\Sset}\chi(q_M)\right)
+\left(\sum_{c\in V}\chi(c^Ts)\right),\nonumber
+\end{align}
+where $q_M=a_1^TMa_1+a_2^TMa_2-b_1^TMb_1-b_2^TMb_2$.
+If $s\ne0$, the last factor vanishes. If the two coordinate pairs agree as multisets, every exponent is zero and the sum is $d^2$. In the remaining case, $s=0$ and the pairs differ. Set $u=a_1-b_1$ and $v=a_1-b_2$; both are nonzero, since either equality would force equality of the multisets. Substitution of $a_2=b_1+b_2-a_1$ gives
+\[
+q_M=2u^TMv.
+\]
+The map $M\mapsto Mv$ is injective: equality for two matrices would contradict invertibility of their difference. Its domain and codomain both have $d$ elements, so it is bijective. Thus $\sum_M\chi(2u^TMv)=\sum_y\chi(2u^Ty)=0$. Equation \eqref{eq:momentfactor}, divided by $d^2$, proves \eqref{eq:moment}.
+
+Finally, if $X(\Sset)$ is a subgroup, then $\phi_{A,0}+\phi_{B,0}=\phi_{C,c}$ for some $C\in\Sset,c\in V$. Coefficient uniqueness gives $C=A+B$ and $c=0$, so $\Sset$ is closed under addition. Conversely, closure of $\Sset$ makes $X(\Sset)$ closed under addition. It is finite and contains zero, and therefore is a subgroup: the inverse of any element is a nonnegative multiple of it.
+\end{proof}
+
+\begin{corollary}\label{cor:classical}
+The order-27 spread in Abdukhalikov \cite[Section~3.3, Corollary~3.7]{abdu} yields an identity-containing counterexample to Conjecture~4.9.
+\end{corollary}
+\begin{proof}
+For $F=\F_{27}$ and $\rho(x)=x^3$, the cited formulas give the 27 linear maps
+\[
+K=\{0\}\cup\{T_m:m\in F^\times\text{ nonsquare}\}
+\cup\{U_s:s\in F^\times/\{\pm1\}\},
+\]
+where $T_m(x)=mx^9+m^3x^3$ and $U_s(x)=s^2x-s^4x^3-s^{10}x^9$. They are self-adjoint for the nondegenerate trace pairing and distinct maps have invertible differences, by the cited spread construction. Since $-1$ is nonsquare, $T_{-1}\in K$, but $-T_{-1}=T_1\notin K$: it is excluded from the nonsquare branch, and every $U_s$ has a nonzero coefficient of $x$. Uniqueness of polynomial functions of degree below 27 justifies this distinction. Choose an $\F_3$-basis of $F$ and let $G$ be its invertible trace-pairing matrix. Then the matrices $\tfrac12 GL$ for $L\in K$ are symmetric, contain zero and have invertible differences. Their quadratic phases are exactly
+\[
+\frac{2\pi}{3}\operatorname{Tr}_{F/\F_3}\bigl(\tfrac12xL(x)+bx\bigr),\qquad L\in K,\ b\in F.
+\]
+Lemma~\ref{lem:spread} proves their design and overlap properties, and the displayed failure of closure under negation proves they are not a group. This field description is a classical certificate; no identification with Table~\ref{tab:matrices} is needed.
+\end{proof}
+
+\section{An explicit matrix certificate in dimension 27}
+Take $p=3$, $n=3$. Table~\ref{tab:matrices} lists $M_0,\ldots,M_{26}$ by the six entries $(m_{11},m_{12},m_{13},m_{22},m_{23},m_{33})$ of a symmetric matrix. All entries and matrix operations are in $\F_3$.
+\begin{table}[ht]
+\centering\small
+\begin{tabular}{r@{\quad}l@{\qquad}r@{\quad}l}
+\toprule
+$j$ & six entries of $M_j$ & $j$ & six entries of $M_j$\\\midrule
+0 & $(0,0,0,0,0,0)$ & 14 & $(0,2,2,1,0,1)$\\
+1 & $(0,1,2,1,2,0)$ & 15 & $(0,1,0,0,0,1)$\\
+2 & $(0,2,1,2,1,0)$ & 16 & $(2,0,1,0,2,0)$\\
+3 & $(0,0,2,2,1,2)$ & 17 & $(1,0,0,2,2,1)$\\
+4 & $(1,1,1,0,2,2)$ & 18 & $(1,0,1,1,0,0)$\\
+5 & $(1,2,2,0,2,1)$ & 19 & $(2,1,2,1,0,2)$\\
+6 & $(0,0,1,1,2,1)$ & 20 & $(2,1,0,2,1,1)$\\
+7 & $(2,1,1,0,1,2)$ & 21 & $(0,2,0,0,0,2)$\\
+8 & $(2,2,2,0,1,1)$ & 22 & $(2,0,0,1,1,2)$\\
+9 & $(2,0,2,2,0,0)$ & 23 & $(1,0,2,0,1,0)$\\
+10 & $(1,2,0,1,2,2)$ & 24 & $(2,2,1,1,1,1)$\\
+11 & $(1,2,1,2,0,1)$ & 25 & $(0,1,1,2,0,2)$\\
+12 & $(1,1,2,2,2,2)$ & 26 & $(1,1,0,1,1,0)$\\
+13 & $(2,2,0,2,2,0)$ & &\\\bottomrule
+\end{tabular}
+\caption{The symmetric matrix set $\Sset$ over $\F_3$.}\label{tab:matrices}
+\end{table}
+
+The accompanying \texttt{verify.py} and \texttt{matrices.json} use exact integer arithmetic to check all $\binom{27}{2}=351$ nonzero difference determinants. They also check that
+\begin{equation}\label{eq:witness}
+M_1+M_3=
+\begin{pmatrix}0&1&1\\1&0&0\\1&0&2\end{pmatrix}\notin\Sset.
+\end{equation}
+For transparency, the determinant of a matrix with rows $(a,b,c),(d,e,f),(g,h,i)$ is computed as $a(ei-fh)-b(di-fg)+c(dh-eg)$ modulo three. Thus these finite premises are directly reproducible from the displayed table.
+
+\begin{theorem}\label{thm:main}
+The set $X(\Sset)$ defined from Table~\ref{tab:matrices} is an identity-containing projective toric two-design of size $729$ in $P(\T^{27})$ satisfying \eqref{eq:overlap}, but it is not a subgroup. Hence Conjecture 4.9 of \cite{iosue} is refuted by an explicit counterexample, including when its hypotheses additionally require the identity.
+\end{theorem}
+\begin{proof}
+The 351 difference checks establish the hypotheses of Lemma~\ref{lem:spread}. Equation~\eqref{eq:witness} contradicts the necessary and sufficient additive-closure criterion in that lemma. In particular, $\phi_{M_1,0}+\phi_{M_3,0}\notin X(\Sset)$.
+\end{proof}
+
+\begin{corollary}\label{cor:consequences}
+The vectors $v_{M,b}=27^{-1/2}(\chi(f_{M,b}(x)))_{x\in\F_3^3}$ form 27 orthonormal bases which, together with the coordinate basis, are 28 mutually unbiased bases. Moreover, no translate of $X(\Sset)$ in $P(\T^{27})$ is a subgroup.
+\end{corollary}
+\begin{proof}
+For a fixed matrix, \eqref{eq:orth} proves orthonormality. For distinct matrices, \eqref{eq:gauss} gives squared normalized overlap $27/27^2=1/27$. Every coordinate of every $v_{M,b}$ has modulus $27^{-1/2}$, which proves unbiasedness with the coordinate basis. For the second assertion, if $X-a=H$ were a subgroup, then $0\in X$ would give $-a\in H$ and hence $a\in H$. It follows that $X=H+a=H$, contradicting Theorem~\ref{thm:main}. This concerns translation in the fixed projective torus, not arbitrary changes of reference basis for the MUBs.
+\end{proof}
+
+\section{Translation consequences for the neighboring questions}
+The distinction between a subgroup and its translate is essential: the moment and overlap conditions are translation invariant, whereas being a subgroup is not. Theorem~\ref{thm:main} is stronger than a translated-subgroup example because it contains zero and is not even a coset.
+
+\begin{corollary}\label{cor:translation}
+Let $d\geq2$ and let $X\subset P(\T^d)$ be a finite uniformly weighted two-design. Every translate $X+a$ is a two-design, with the same distinct-point overlaps. There exists such a translate which does not contain zero and therefore is not a subgroup. If a complete set of MUBs exists in dimension $d$, this gives a two-design of size $d^2$ which is not a subgroup. For Conjecture~4.7 and the forward implication in Conjecture~4.8 of \cite[Section~4.3, p.~15]{iosue}, the coverage is: literal statement only; translation-invariant version not covered.
+\end{corollary}
+\begin{proof}
+Translating adds $a(a_1)+a(a_2)-a(b_1)-a(b_2)$ to every moment exponent. If the coordinate multisets agree this is zero; otherwise it multiplies a zero average by a phase. Pairwise differences are unchanged, proving the overlap assertion. The torus $P(\T^d)$ is infinite and $X$ is finite, so choose $a\notin-X$. Then $0\notin X+a$. Given a complete set of MUBs, Theorem~4.4 of \cite{iosue} supplies the size-$d^2$ design to which this argument applies. This also proves the literal conclusion of Proposition~4.6, but does not establish that every associated representative fails to be a group.
+\end{proof}
+
+The relevant source wording in Conjecture~4.7 is ``then there is a uniformly-weighted $P(T^d)$ 2-design $X$ of size $|X|=d^2$ such that $X$ is not a subgroup''. Corollary~\ref{cor:translation} addresses this literal subgroup condition, not the translation-invariant interpretation that excludes every coset of a subgroup. It does not settle that interpretation or the corresponding identity-containing condition.
+
+\begin{corollary}\label{cor:six}
+There is a uniformly weighted $P(\T^6)$ two-design of size $36$ which is a coset of a subgroup but not itself a subgroup. For the unnumbered conjecture immediately following Conjecture~4.8 in \cite[Section~4.3, p.~15]{iosue}, that ``there do not exist non-group, uniformly-weighted $P(T^6)$ 2-designs of size 36'', the coverage is: literal statement only; translation-invariant version not covered. This example does not satisfy Eq.~(25).
+\end{corollary}
+\begin{proof}
+Put $z=(0,1,3,8,23,27)$ and
+\[
+H=\{2\pi k z/36:k\in\mathbb Z/36\mathbb Z\},\qquad
+a=2\pi(0,1/72,0,0,0,0).
+\]
+The 21 unordered pair sums of the coordinates of $z$ modulo 36 are
+\[
+\{0,1,2,3,4,6,8,9,10,11,14,16,18,23,24,26,27,28,30,31,35\}.
+\]
+They are distinct. Hence character orthogonality on $\mathbb Z/36\mathbb Z$ proves all second moments for $H$, equivalently the Sidon criterion in \cite[Proposition~3.5]{iosue}. Its second coordinate gives 36 distinct points. The second coordinate of $-a$ is an odd multiple of $2\pi/72$, so $-a\notin H$. Corollary~\ref{cor:translation} proves that $H+a$ is the required non-group design.
+
+To check the last assertion, set $\zeta=e^{2\pi i/36}$. The squared overlap of the points whose parameters differ by one is $|\sum_j\zeta^{z_j}|^2$. Reduction of $\sum_{r,s}t^{z_r-z_s\bmod36}$ modulo $\Phi_{36}(t)=t^{12}-t^6+1$ gives $5+t^7-t^{11}$. Since $\Phi_{36}$ is the minimal polynomial of $\zeta$, this value is neither 0 nor 6. Translation leaves it unchanged.
+\end{proof}
+
+\begin{corollary}\label{cor:minimal}
+For the question ``Must the minimal design be a group?'' in \cite[Section~5, p.~16, ``Minimal projective toric designs'']{iosue}, the coverage is: literal statement only; translation-invariant version not covered. In $P(\T^2)$, the three points
+\[
+\{(0,\pi/3),(0,\pi),(0,5\pi/3)\}
+\]
+form a uniformly weighted two-design of minimal size and are a coset of a subgroup, but not themselves a subgroup.
+\end{corollary}
+\begin{proof}
+The subgroup $\{(0,2\pi k/3):k=0,1,2\}$ is a two-design: the only nonconstant frequencies are $\pm1,\pm2$, whose sums vanish. Translate by $(0,\pi/3)$ and apply Corollary~\ref{cor:translation}. The cardinality equals the lower bound $d(d-1)+1=3$ of \cite[Proposition~2.13]{iosue}, and zero is absent. This does not answer the corresponding question up to translation, or with an additional identity requirement.
+\end{proof}
+
+For the spread in Lemma~\ref{lem:spread}, there is also a direct finite-geometric interpretation of the connection requested in Section~5 of \cite{iosue}.
+\begin{corollary}\label{cor:planes}
+On $V\oplus V$, take the lines $x=c$ and $y=Mx+c$ for $c\in V$, $M\in\Sset$. They form an affine plane of order $d$. The explicit non-group design therefore accompanies an affine plane of order 27, and completing the parallel classes gives a projective plane of order 27.
+\end{corollary}
+\begin{proof}
+For two distinct points with equal first coordinate, the unique line is vertical. Otherwise their difference has first coordinate $u\ne0$. The map $M\mapsto Mu$ is bijective by the spread property proved in Lemma~\ref{lem:spread}; it gives the unique slope $M$ through both points. Each of the $d+1$ directions has $d$ disjoint lines partitioning the $d^2$ points. Adding one point for each direction and one line through these new points is the usual projective completion. This is the construction in Kantor \cite[Eq.~(3.3)]{kantor}, not an assertion about arbitrary projective toric designs or arbitrary complete MUBs.
+\end{proof}
+
+\begin{corollary}\label{cor:hadamard}
+The matrices $H_M=d^{-1/2}(\chi(f_{M,b}(x)))_{x,b}$ are normalized complex Hadamard matrices. For $M\ne N$, $H_M^*H_N$ is also a normalized complex Hadamard matrix. This realizes the Hadamard connection suggested in \cite[Section~5, p.~16]{iosue} for every spread in Lemma~\ref{lem:spread}.
+\end{corollary}
+\begin{proof}
+Every entry of $H_M$ has modulus $d^{-1/2}$, and character orthogonality makes its columns orthonormal. The cross-Gram matrix is unitary, and the quadratic-energy identity gives modulus $d^{-1/2}$ for each of its entries. These are exactly the normalized complex Hadamard conditions; the MUB formulation is the classical one in \cite[Section~3]{kantor}.
+\end{proof}
+
+\section{Coverage and exact verification}
+Coverage below distinguishes literal subgroup conditions from the translation-invariant interpretation in arXiv:2311.13479v3. Translated-subgroup examples do not settle the latter interpretation; the identity-containing counterexample to Conjecture~4.9 is not a coset.
+\begin{center}\small
+\begin{tabular}{@{}p{0.32\linewidth}p{0.62\linewidth}@{}}
+\toprule
+Source item in \cite{iosue} & Coverage\\\midrule
+Conjecture 4.9, \S4.3, p.~15; Eq.~(25) & Refuted (explicit counterexample), even with identity: Theorem~\ref{thm:main}. Additivity of the spread is the exact subgroup criterion in Lemma~\ref{lem:spread}.\\
+Classical nonadditive spread & Prior proof cited: Ball et al. (2004), Theorem~2.2; explicit formulas Abdukhalikov (2014), Corollary~3.7. Its subgroup implication is proved in Corollary~\ref{cor:classical}.\\
+Spread-to-MUB and plane constructions & Prior proof cited: Kantor (2012), \S3, Eqs.~(3.1)--(3.3). Written proofs: Corollaries~\ref{cor:consequences} and \ref{cor:planes}.\\
+Proposition 4.6, \S4.3, p.~15 & Prior proof cited: Iosue et al. (2024). Corollary~\ref{cor:translation} supplies only a literal subgroup consequence, not its translation-invariant interpretation.\\
+Conjecture 4.7, \S4.3, p.~15 & Literal statement only; translation-invariant version not covered: Corollary~\ref{cor:translation}.\\
+Conjecture 4.8, \S4.3, p.~15 & Forward implication: literal statement only; translation-invariant version not covered. Converse not covered. Corollary~\ref{cor:six} is a subgroup coset.\\
+Unnumbered size-36 nonexistence conjecture after 4.8, p.~15 & Literal statement only; translation-invariant version not covered: Corollary~\ref{cor:six}. The example is a subgroup coset and fails Eq.~(25).\\
+\S5, p.~16: minimal-design group question & Literal statement only; translation-invariant version not covered: Corollary~\ref{cor:minimal}. The example is a subgroup coset.\\
+\S5, p.~16: planes and Hadamard matrices & Prior proof cited: Kantor (2012), \S3. Written proofs for spread instances: Corollaries~\ref{cor:planes}--\ref{cor:hadamard}. Not covered for arbitrary designs.\\
+Conjecture 2.15; \S5 minimal cardinalities and higher strength & Not covered by the spread example: $729>703$. The $d=2$ example attains the known bound in that dimension.\\
+Dimension-six MUB existence & Not covered: the design in Corollary~\ref{cor:six} fails Eq.~(25).\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The finite checker verifies 729 distinct anchored phase functions and their identity and nonclosure. It covers all $27^4=531441$ ordered coordinate quadruples through symmetry in each coordinate pair. For unequal coordinate sums, each nonzero linear functional on $\F_3^3$ assumes each residue nine times; for equal sums, the checker enumerates all 27 quadratic residues. Consequently the exponent histograms are $(729,0,0)$ for equal multisets and $(243,243,243)$ otherwise. These give the exact moments because $1+\omega+\omega^2=0$ for $\omega=e^{2\pi i/3}$.
+
+For overlaps, every unordered matrix difference and every linear term are enumerated, together with all nonzero linear terms for equal matrices. This covers all $729\cdot728=530712$ ordered distinct phase pairs, since reversing a difference conjugates its character sum. For a residue histogram $(r,s,t)$ the squared norm is the integer $r^2+s^2+t^2-rs-rt-st$; no floating-point comparisons occur.
+
+The pinned \href{\leanurl}{\texttt{ProjectiveToricDesignNonGroup.lean}} contains the declaration
+\begin{quote}\small\ttfamily
+D5.S3.Quantum.Measurements.\\
+ProjectiveToricDesignNonGroup.result
+\end{quote}
+whose statement is the negation of the identity-containing universal subgroup assertion. More precisely, its \texttt{claim} quantifies over positive $d$ and finite subsets of functions $\mathrm{Fin}\,d\to\mathbb R/(2\pi\mathbb Z)$; its hypotheses require first coordinate zero, cardinality $d^2$, \texttt{design2}, \texttt{mubOverlap} and membership of zero. The conclusion identifies the set with an additive subgroup. The declaration \texttt{result} negates this universal assertion using the displayed dimension-27 matrix set. The source's auxiliary declarations establish cardinality, moments, overlaps, anchoring, identity and nonclosure for that example. Lemma~\ref{lem:spread} for arbitrary odd primes, the classical-field deduction in Corollary~\ref{cor:classical}, the no-translate conclusion and Corollaries~\ref{cor:translation}--\ref{cor:hadamard} have written proofs here; they are not the statement of \texttt{result}. The supplied checker establishes the finite claims just specified.
+
+The separate \texttt{verify\_siblings.py} checks all 1296 ordered second-moment coordinate quadruples for the dimension-six cyclic certificate by its distinct pair sums, and all 16 for the dimension-two certificate. It also checks the rational translations, cardinalities, absence of zero, nonclosure and the cyclotomic remainder $5+t^7-t^{11}$. The file \texttt{verify\_classical.py} checks the 27 distinct linear, trace-self-adjoint maps of Corollary~\ref{cor:classical} in $\F_3[u]/(u^3-u-1)$, their 351 invertible pairwise differences and the negation obstruction. The general translation argument and the affine-plane axioms are proved above, rather than inferred from numerical samples.
+
+\begin{thebibliography}{9}
+\bibitem{iosue} J.~T. Iosue, T.~C. Mooney, A. Ehrenberg and A.~V. Gorshkov,
+\emph{Projective toric designs, quantum state designs, and mutually unbiased bases},
+Quantum \textbf{8}, 1546 (2024).
+\href{https://doi.org/10.22331/q-2024-12-03-1546}{doi:10.22331/q-2024-12-03-1546};
+\href{https://arxiv.org/abs/2311.13479v3}{arXiv:2311.13479v3}.
+\bibitem{ball} S. Ball, J. Bamberg, M. Lavrauw and T. Penttila,
+\emph{Symplectic Spreads},
+Des. Codes Cryptogr. \textbf{32}, 9--14 (2004).
+\href{https://doi.org/10.1023/B:DESI.0000029209.24742.89}{doi:10.1023/B:DESI.0000029209.24742.89}.
+\bibitem{kantor} W.~M. Kantor,
+\emph{MUBs inequivalence and affine planes},
+J. Math. Phys. \textbf{53}, 032204 (2012).
+\href{https://doi.org/10.1063/1.3690050}{doi:10.1063/1.3690050};
+\href{https://arxiv.org/abs/1104.3370v3}{arXiv:1104.3370v3}.
+\bibitem{abdu} K. Abdukhalikov,
+\emph{Symplectic spreads, planar functions and mutually unbiased bases},
+J. Algebraic Combin. \textbf{41}, 1055--1077 (2015).
+\href{https://doi.org/10.1007/s10801-014-0565-y}{doi:10.1007/s10801-014-0565-y};
+\href{https://arxiv.org/abs/1306.3478v3}{arXiv:1306.3478v3}.
+\end{thebibliography}
+\end{document}

@@ -1,0 +1,382 @@
+{
+  "nodes": [
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s1",
+      "contributor": null,
+      "identity": "collected:projective-toric-design-subgroup-counterexample:3:s1",
+      "kind": "paper",
+      "label": "Lemma",
+      "lean_source": {
+        "revision": "f7ba557ae2a5d2c3a3a519e0713d65ac86af2973",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/f7ba557ae2a5d2c3a3a519e0713d65ac86af2973/D5/S3/Quantum/Measurements/ProjectiveToricDesignNonGroup.lean"
+      },
+      "lineage": "collected:projective-toric-design-subgroup-counterexample:s1",
+      "macros": {
+        "\\F": "\\mathbb F",
+        "\\Sset": "\\mathcal S",
+        "\\T": "\\mathbb T",
+        "\\leanurl": "https://github.com/the-omega-institute/trureturing/blob/f7ba557ae2a5d2c3a3a519e0713d65ac86af2973/D5/S3/Quantum/Measurements/ProjectiveToricDesignNonGroup.lean"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "projective-toric-design-subgroup-counterexample",
+      "scope": "in_scope",
+      "statement": "Let $p$ be an odd prime, $V=\\F_p^n$, and $d=p^n$. Suppose $\\Sset$ consists of $d$ symmetric $n\\times n$ matrices over $\\F_p$, contains zero, and every difference of distinct matrices is invertible. For $M\\in\\Sset$ and $b\\in V$, set\n\\[\nf_{M,b}(x)=x^TMx+b^Tx,\\quad\n\\phi_{M,b}(x)=\\frac{2\\pi}{p}f_{M,b}(x)\\pmod {2\\pi},\\quad\nX(\\Sset)=\\{\\phi_{M,b}:M\\in\\Sset,\\ b\\in V\\}.\n\\]\nThen $X(\\Sset)$ has $d^2$ points, contains zero, is anchored at $x=0$, satisfies \\eqref{eq:moment} and \\eqref{eq:overlap}, and is a subgroup if and only if $\\Sset$ is closed under matrix addition.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Identity-containing counterexamples to Conjecture 4.9 (Iosue–Mooney–Ehrenberg–Gorshkov, Section 4.3, p. 15, arXiv:2311.13479v3): certificates and extensions of Abdukhalikov's (2014) construction",
+      "toolchain": null,
+      "version": 3,
+      "work": "projective-toric-design-subgroup-counterexample"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s2",
+      "contributor": null,
+      "identity": "collected:projective-toric-design-subgroup-counterexample:3:s2",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "f7ba557ae2a5d2c3a3a519e0713d65ac86af2973",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/f7ba557ae2a5d2c3a3a519e0713d65ac86af2973/D5/S3/Quantum/Measurements/ProjectiveToricDesignNonGroup.lean"
+      },
+      "lineage": "collected:projective-toric-design-subgroup-counterexample:s2",
+      "macros": {
+        "\\F": "\\mathbb F",
+        "\\Sset": "\\mathcal S",
+        "\\T": "\\mathbb T",
+        "\\leanurl": "https://github.com/the-omega-institute/trureturing/blob/f7ba557ae2a5d2c3a3a519e0713d65ac86af2973/D5/S3/Quantum/Measurements/ProjectiveToricDesignNonGroup.lean"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "projective-toric-design-subgroup-counterexample",
+      "scope": "in_scope",
+      "statement": "The order-27 spread in Abdukhalikov \\cite[Section~3.3, Corollary~3.7]{abdu} yields an identity-containing counterexample to Conjecture~4.9.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Identity-containing counterexamples to Conjecture 4.9 (Iosue–Mooney–Ehrenberg–Gorshkov, Section 4.3, p. 15, arXiv:2311.13479v3): certificates and extensions of Abdukhalikov's (2014) construction",
+      "toolchain": null,
+      "version": 3,
+      "work": "projective-toric-design-subgroup-counterexample"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s3",
+      "contributor": null,
+      "identity": "collected:projective-toric-design-subgroup-counterexample:3:s3",
+      "kind": "paper",
+      "label": "Theorem",
+      "lean_source": {
+        "revision": "f7ba557ae2a5d2c3a3a519e0713d65ac86af2973",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/f7ba557ae2a5d2c3a3a519e0713d65ac86af2973/D5/S3/Quantum/Measurements/ProjectiveToricDesignNonGroup.lean"
+      },
+      "lineage": "collected:projective-toric-design-subgroup-counterexample:s3",
+      "macros": {
+        "\\F": "\\mathbb F",
+        "\\Sset": "\\mathcal S",
+        "\\T": "\\mathbb T",
+        "\\leanurl": "https://github.com/the-omega-institute/trureturing/blob/f7ba557ae2a5d2c3a3a519e0713d65ac86af2973/D5/S3/Quantum/Measurements/ProjectiveToricDesignNonGroup.lean"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "projective-toric-design-subgroup-counterexample",
+      "scope": "in_scope",
+      "statement": "The set $X(\\Sset)$ defined from Table~\\ref{tab:matrices} is an identity-containing projective toric two-design of size $729$ in $P(\\T^{27})$ satisfying \\eqref{eq:overlap}, but it is not a subgroup. Hence Conjecture 4.9 of \\cite{iosue} is refuted by an explicit counterexample, including when its hypotheses additionally require the identity.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Identity-containing counterexamples to Conjecture 4.9 (Iosue–Mooney–Ehrenberg–Gorshkov, Section 4.3, p. 15, arXiv:2311.13479v3): certificates and extensions of Abdukhalikov's (2014) construction",
+      "toolchain": null,
+      "version": 3,
+      "work": "projective-toric-design-subgroup-counterexample"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s4",
+      "contributor": null,
+      "identity": "collected:projective-toric-design-subgroup-counterexample:3:s4",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "f7ba557ae2a5d2c3a3a519e0713d65ac86af2973",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/f7ba557ae2a5d2c3a3a519e0713d65ac86af2973/D5/S3/Quantum/Measurements/ProjectiveToricDesignNonGroup.lean"
+      },
+      "lineage": "collected:projective-toric-design-subgroup-counterexample:s4",
+      "macros": {
+        "\\F": "\\mathbb F",
+        "\\Sset": "\\mathcal S",
+        "\\T": "\\mathbb T",
+        "\\leanurl": "https://github.com/the-omega-institute/trureturing/blob/f7ba557ae2a5d2c3a3a519e0713d65ac86af2973/D5/S3/Quantum/Measurements/ProjectiveToricDesignNonGroup.lean"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "projective-toric-design-subgroup-counterexample",
+      "scope": "in_scope",
+      "statement": "The vectors $v_{M,b}=27^{-1/2}(\\chi(f_{M,b}(x)))_{x\\in\\F_3^3}$ form 27 orthonormal bases which, together with the coordinate basis, are 28 mutually unbiased bases. Moreover, no translate of $X(\\Sset)$ in $P(\\T^{27})$ is a subgroup.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Identity-containing counterexamples to Conjecture 4.9 (Iosue–Mooney–Ehrenberg–Gorshkov, Section 4.3, p. 15, arXiv:2311.13479v3): certificates and extensions of Abdukhalikov's (2014) construction",
+      "toolchain": null,
+      "version": 3,
+      "work": "projective-toric-design-subgroup-counterexample"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s5",
+      "contributor": null,
+      "identity": "collected:projective-toric-design-subgroup-counterexample:3:s5",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "f7ba557ae2a5d2c3a3a519e0713d65ac86af2973",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/f7ba557ae2a5d2c3a3a519e0713d65ac86af2973/D5/S3/Quantum/Measurements/ProjectiveToricDesignNonGroup.lean"
+      },
+      "lineage": "collected:projective-toric-design-subgroup-counterexample:s5",
+      "macros": {
+        "\\F": "\\mathbb F",
+        "\\Sset": "\\mathcal S",
+        "\\T": "\\mathbb T",
+        "\\leanurl": "https://github.com/the-omega-institute/trureturing/blob/f7ba557ae2a5d2c3a3a519e0713d65ac86af2973/D5/S3/Quantum/Measurements/ProjectiveToricDesignNonGroup.lean"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "projective-toric-design-subgroup-counterexample",
+      "scope": "in_scope",
+      "statement": "Let $d\\geq2$ and let $X\\subset P(\\T^d)$ be a finite uniformly weighted two-design. Every translate $X+a$ is a two-design, with the same distinct-point overlaps. There exists such a translate which does not contain zero and therefore is not a subgroup. If a complete set of MUBs exists in dimension $d$, this gives a two-design of size $d^2$ which is not a subgroup. For Conjecture~4.7 and the forward implication in Conjecture~4.8 of \\cite[Section~4.3, p.~15]{iosue}, the coverage is: literal statement only; translation-invariant version not covered.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Identity-containing counterexamples to Conjecture 4.9 (Iosue–Mooney–Ehrenberg–Gorshkov, Section 4.3, p. 15, arXiv:2311.13479v3): certificates and extensions of Abdukhalikov's (2014) construction",
+      "toolchain": null,
+      "version": 3,
+      "work": "projective-toric-design-subgroup-counterexample"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s6",
+      "contributor": null,
+      "identity": "collected:projective-toric-design-subgroup-counterexample:3:s6",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "f7ba557ae2a5d2c3a3a519e0713d65ac86af2973",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/f7ba557ae2a5d2c3a3a519e0713d65ac86af2973/D5/S3/Quantum/Measurements/ProjectiveToricDesignNonGroup.lean"
+      },
+      "lineage": "collected:projective-toric-design-subgroup-counterexample:s6",
+      "macros": {
+        "\\F": "\\mathbb F",
+        "\\Sset": "\\mathcal S",
+        "\\T": "\\mathbb T",
+        "\\leanurl": "https://github.com/the-omega-institute/trureturing/blob/f7ba557ae2a5d2c3a3a519e0713d65ac86af2973/D5/S3/Quantum/Measurements/ProjectiveToricDesignNonGroup.lean"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "projective-toric-design-subgroup-counterexample",
+      "scope": "in_scope",
+      "statement": "There is a uniformly weighted $P(\\T^6)$ two-design of size $36$ which is a coset of a subgroup but not itself a subgroup. For the unnumbered conjecture immediately following Conjecture~4.8 in \\cite[Section~4.3, p.~15]{iosue}, that ``there do not exist non-group, uniformly-weighted $P(T^6)$ 2-designs of size 36'', the coverage is: literal statement only; translation-invariant version not covered. This example does not satisfy Eq.~(25).",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Identity-containing counterexamples to Conjecture 4.9 (Iosue–Mooney–Ehrenberg–Gorshkov, Section 4.3, p. 15, arXiv:2311.13479v3): certificates and extensions of Abdukhalikov's (2014) construction",
+      "toolchain": null,
+      "version": 3,
+      "work": "projective-toric-design-subgroup-counterexample"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s7",
+      "contributor": null,
+      "identity": "collected:projective-toric-design-subgroup-counterexample:3:s7",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "f7ba557ae2a5d2c3a3a519e0713d65ac86af2973",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/f7ba557ae2a5d2c3a3a519e0713d65ac86af2973/D5/S3/Quantum/Measurements/ProjectiveToricDesignNonGroup.lean"
+      },
+      "lineage": "collected:projective-toric-design-subgroup-counterexample:s7",
+      "macros": {
+        "\\F": "\\mathbb F",
+        "\\Sset": "\\mathcal S",
+        "\\T": "\\mathbb T",
+        "\\leanurl": "https://github.com/the-omega-institute/trureturing/blob/f7ba557ae2a5d2c3a3a519e0713d65ac86af2973/D5/S3/Quantum/Measurements/ProjectiveToricDesignNonGroup.lean"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "projective-toric-design-subgroup-counterexample",
+      "scope": "in_scope",
+      "statement": "For the question ``Must the minimal design be a group?'' in \\cite[Section~5, p.~16, ``Minimal projective toric designs'']{iosue}, the coverage is: literal statement only; translation-invariant version not covered. In $P(\\T^2)$, the three points\n\\[\n\\{(0,\\pi/3),(0,\\pi),(0,5\\pi/3)\\}\n\\]\nform a uniformly weighted two-design of minimal size and are a coset of a subgroup, but not themselves a subgroup.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Identity-containing counterexamples to Conjecture 4.9 (Iosue–Mooney–Ehrenberg–Gorshkov, Section 4.3, p. 15, arXiv:2311.13479v3): certificates and extensions of Abdukhalikov's (2014) construction",
+      "toolchain": null,
+      "version": 3,
+      "work": "projective-toric-design-subgroup-counterexample"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s8",
+      "contributor": null,
+      "identity": "collected:projective-toric-design-subgroup-counterexample:3:s8",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "f7ba557ae2a5d2c3a3a519e0713d65ac86af2973",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/f7ba557ae2a5d2c3a3a519e0713d65ac86af2973/D5/S3/Quantum/Measurements/ProjectiveToricDesignNonGroup.lean"
+      },
+      "lineage": "collected:projective-toric-design-subgroup-counterexample:s8",
+      "macros": {
+        "\\F": "\\mathbb F",
+        "\\Sset": "\\mathcal S",
+        "\\T": "\\mathbb T",
+        "\\leanurl": "https://github.com/the-omega-institute/trureturing/blob/f7ba557ae2a5d2c3a3a519e0713d65ac86af2973/D5/S3/Quantum/Measurements/ProjectiveToricDesignNonGroup.lean"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "projective-toric-design-subgroup-counterexample",
+      "scope": "in_scope",
+      "statement": "On $V\\oplus V$, take the lines $x=c$ and $y=Mx+c$ for $c\\in V$, $M\\in\\Sset$. They form an affine plane of order $d$. The explicit non-group design therefore accompanies an affine plane of order 27, and completing the parallel classes gives a projective plane of order 27.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Identity-containing counterexamples to Conjecture 4.9 (Iosue–Mooney–Ehrenberg–Gorshkov, Section 4.3, p. 15, arXiv:2311.13479v3): certificates and extensions of Abdukhalikov's (2014) construction",
+      "toolchain": null,
+      "version": 3,
+      "work": "projective-toric-design-subgroup-counterexample"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s9",
+      "contributor": null,
+      "identity": "collected:projective-toric-design-subgroup-counterexample:3:s9",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "f7ba557ae2a5d2c3a3a519e0713d65ac86af2973",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/f7ba557ae2a5d2c3a3a519e0713d65ac86af2973/D5/S3/Quantum/Measurements/ProjectiveToricDesignNonGroup.lean"
+      },
+      "lineage": "collected:projective-toric-design-subgroup-counterexample:s9",
+      "macros": {
+        "\\F": "\\mathbb F",
+        "\\Sset": "\\mathcal S",
+        "\\T": "\\mathbb T",
+        "\\leanurl": "https://github.com/the-omega-institute/trureturing/blob/f7ba557ae2a5d2c3a3a519e0713d65ac86af2973/D5/S3/Quantum/Measurements/ProjectiveToricDesignNonGroup.lean"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "projective-toric-design-subgroup-counterexample",
+      "scope": "in_scope",
+      "statement": "The matrices $H_M=d^{-1/2}(\\chi(f_{M,b}(x)))_{x,b}$ are normalized complex Hadamard matrices. For $M\\ne N$, $H_M^*H_N$ is also a normalized complex Hadamard matrix. This realizes the Hadamard connection suggested in \\cite[Section~5, p.~16]{iosue} for every spread in Lemma~\\ref{lem:spread}.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Identity-containing counterexamples to Conjecture 4.9 (Iosue–Mooney–Ehrenberg–Gorshkov, Section 4.3, p. 15, arXiv:2311.13479v3): certificates and extensions of Abdukhalikov's (2014) construction",
+      "toolchain": null,
+      "version": 3,
+      "work": "projective-toric-design-subgroup-counterexample"
+    }
+  ]
+}

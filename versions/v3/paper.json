@@ -1,0 +1,66 @@
+{
+  "files": {
+    "pdf": {
+      "bytes": 102405,
+      "matches_public": true,
+      "path": "paper.pdf",
+      "public_sha256": "c00de1c70c7050a281776500d8cc8d585e79c18894b892ac1600a0fe1097a460",
+      "sha256": "c00de1c70c7050a281776500d8cc8d585e79c18894b892ac1600a0fe1097a460"
+    },
+    "source": {
+      "bytes": 19108,
+      "matches_public": true,
+      "path": "source.archive",
+      "public_sha256": "8ffc1e449406fc0ac894cb00a7eb1eb1d1f1f6399d7c873fa983f8289052b5e1",
+      "sha256": "8ffc1e449406fc0ac894cb00a7eb1eb1d1f1f6399d7c873fa983f8289052b5e1"
+    }
+  },
+  "source_identity": "Mathesis public projection",
+  "work": {
+    "abstract_text": "Extending Abdukhalikov's (2014) nonadditive-spread construction in Kantor's (2012) matrix formulation, we give explicit certificates refuting Conjecture 4.9 of Iosue, Mooney, Ehrenberg and Gorshkov, Projective toric designs, quantum state designs, and mutually unbiased bases (2024), Section 4.3, p. 15, arXiv:2311.13479v3, even with an identity-containing hypothesis. Our 729 quadratic phase functions in dimension 27 form a projective toric two-design with the required overlaps but without additive closure; no translate is a subgroup. Written proofs and exact finite certificates specify each conclusion's scope.",
+    "authors": [
+      {
+        "affiliation": "ChronoAI Pte Ltd, Singapore",
+        "name": "Haobo Ma"
+      },
+      {
+        "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+        "name": "Wenlin Zhang"
+      }
+    ],
+    "concept_doi": null,
+    "current_version": 3,
+    "doi": null,
+    "lean_source": {
+      "revision": "f7ba557ae2a5d2c3a3a519e0713d65ac86af2973",
+      "url": "https://github.com/the-omega-institute/trureturing/blob/f7ba557ae2a5d2c3a3a519e0713d65ac86af2973/D5/S3/Quantum/Measurements/ProjectiveToricDesignNonGroup.lean"
+    },
+    "license": "CC-BY-4.0",
+    "msc": [],
+    "pdf": {
+      "bytes": 102405,
+      "sha256": "c00de1c70c7050a281776500d8cc8d585e79c18894b892ac1600a0fe1097a460",
+      "url": "/api/v1/collected-papers/projective-toric-design-subgroup-counterexample/files/pdf?version=3"
+    },
+    "previous_version": null,
+    "publication": "public",
+    "published_on": "2026-11-22T11:44:51.428054643Z",
+    "record": "projective-toric-design-subgroup-counterexample",
+    "repository_name": "projective-toric-design-subgroup-counterexample",
+    "source": {
+      "bytes": 19108,
+      "sha256": "8ffc1e449406fc0ac894cb00a7eb1eb1d1f1f6399d7c873fa983f8289052b5e1",
+      "url": "/api/v1/collected-papers/projective-toric-design-subgroup-counterexample/files/source?version=3"
+    },
+    "title": "Identity-containing counterexamples to Conjecture 4.9 (Iosue–Mooney–Ehrenberg–Gorshkov, Section 4.3, p. 15, arXiv:2311.13479v3): certificates and extensions of Abdukhalikov's (2014) construction",
+    "versions": [
+      {
+        "previous_version": null,
+        "published_on": "2026-11-22T11:44:51.428054643Z",
+        "revision": "3",
+        "version": 3
+      }
+    ],
+    "work": "projective-toric-design-subgroup-counterexample"
+  }
+}
