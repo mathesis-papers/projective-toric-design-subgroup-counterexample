@@ -28,9 +28,9 @@
         "name": "Wenlin Zhang"
       }
     ],
-    "concept_doi": null,
+    "concept_doi": "10.5281/zenodo.24405805",
     "current_version": 3,
-    "doi": null,
+    "doi": "10.5281/zenodo.24405806",
     "lean_source": {
       "revision": "f7ba557ae2a5d2c3a3a519e0713d65ac86af2973",
       "url": "https://github.com/the-omega-institute/trureturing/blob/f7ba557ae2a5d2c3a3a519e0713d65ac86af2973/D5/S3/Quantum/Measurements/ProjectiveToricDesignNonGroup.lean"
