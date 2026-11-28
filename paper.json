@@ -31,6 +31,7 @@
     "concept_doi": "10.5281/zenodo.24405805",
     "current_version": 3,
     "doi": "10.5281/zenodo.24405806",
+    "kind": "note",
     "lean_source": {
       "revision": "f7ba557ae2a5d2c3a3a519e0713d65ac86af2973",
       "url": "https://github.com/the-omega-institute/trureturing/blob/f7ba557ae2a5d2c3a3a519e0713d65ac86af2973/D5/S3/Quantum/Measurements/ProjectiveToricDesignNonGroup.lean"
@@ -55,10 +56,12 @@
     "title": "Identity-containing counterexamples to Conjecture 4.9 (Iosue–Mooney–Ehrenberg–Gorshkov, Section 4.3, p. 15, arXiv:2311.13479v3): certificates and extensions of Abdukhalikov's (2014) construction",
     "versions": [
       {
+        "changelog": null,
         "previous_version": null,
         "published_on": "2026-11-22T11:44:51.428054643Z",
         "revision": "3",
-        "version": 3
+        "version": 3,
+        "version_label": null
       }
     ],
     "work": "projective-toric-design-subgroup-counterexample"
